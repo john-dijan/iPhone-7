@@ -1,0 +1,292 @@
+@import 'https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css';
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body{
+    background: #f5f5f5;
+}
+
+.main{
+    background: url('image/ref.png') no-repeat;
+    background-size: contain;
+    width: 950px;
+    height: 620px;
+    position: relative;
+    left: 25%;
+    z-index: 1;
+}
+
+.wallpaper{
+    background: url('https://i.pinimg.com/originals/99/b0/04/99b004cd23dcc885f7c73046ead658ba.jpg') no-repeat;
+    background-size: contain;
+    height: 464px;
+    width: 960px;
+    position: absolute;
+    top: 13%;
+    left: 19%;
+    z-index: -1;
+}
+
+.screen{
+    width: 263px;
+}
+
+.header{
+    display: flex;
+    flex-wrap: wrap;
+    height: 20px;
+    background: rgba(0,0,0,0.2);
+    justify-content: space-between;
+    padding: 6px 0;
+    user-select: none;
+}
+
+.network{
+    display: flex;
+    padding-left: 2px;
+}
+
+.dot{
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    border: 1px solid white;
+    margin-left: 2px;
+}
+
+.white{
+    background: white;
+}
+
+.network p{
+    font-size: 11px;
+    color: white;
+    position: relative;
+    top: -4px;
+    left: 4px;
+}
+
+.header span{
+    font-size: 11px;
+    margin-top: -4px;
+    color: white;
+}
+
+.network i{
+    color: white;
+    font-size: 11px;
+    position: relative;
+    top: -1px;
+    left: 6px;
+    font-weight: normal;
+}
+
+.battery{
+    display: flex;
+    color: white;
+    margin-top: -2px;
+}
+
+.battery p{
+    margin-top: -2px;
+    font-size: 12px;
+}
+
+.battery i{
+    margin: 0 6px;
+    font-size: 12px;
+}
+
+.apps{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 15px 0 0 0px;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 3px 0 8px 16px;
+    cursor: pointer;
+}
+
+.content:active{
+    transform: scale(.9);
+}
+
+.content img{
+    width: 45px;
+    height: 45px;
+}
+
+.content p{
+    color: white;
+    font-size: 10px;
+}
+
+.bottom{
+    background: rgba(255,255,255,0.4);
+    display: flex;
+    height: 60px;
+    margin-top: 18px;
+    padding: 0 0px;
+}
+
+.round{
+    height: 42px;
+    width: 42px;
+    border-radius: 50%;
+    cursor: pointer;
+    position: absolute;
+    background: black;
+    top: 102.5%;
+    left: 108.5px;
+}
+
+.content-bottom{
+    margin: 5px 0 0 16px;
+}
+
+.content-bottom img{
+    height: 40px;
+    width: 40px;
+}
+
+.messages{
+    background: #dddddd;
+    height: 443px;
+    display: none;
+}
+
+.message-header{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #999999;
+}
+
+.message-header a{
+    margin: 0 5px;
+    text-decoration: none;
+}
+
+.message-header p{
+    font-weight: 600;
+}
+
+.message-header i{
+    margin-top: 3px;
+    color: #3D70C1;
+}
+
+.message-list{
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 1px solid darkgrey;
+    padding: 10px 0 10px 10px;
+    cursor: pointer;
+}
+
+.message-list:hover{
+    background: #fafafa;
+}
+
+.img{
+    width: 40px;
+    height: 40px;
+    padding: 2px 0;
+    text-align: center;
+    color: white;
+    margin-top: 5px;
+    font-size: 25px;
+    background: gray;
+    border-radius: 50%;
+}
+
+.text-message{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    width: 75%;
+}
+
+.name-message{
+    display: flex;
+    justify-content: space-between;
+}
+
+.name-message p{
+    font-weight: 600;
+}
+
+.name-message span{
+    color: #909090;
+}
+
+.message-inbox{
+    background: white;
+    height: 444px;
+    display: none;
+}
+
+.inbox-header{
+    display: flex;
+    justify-content: space-between;
+    background: lightgrey;
+    height: 30px;
+    padding: 5px 8px;
+    font-weight: 600;
+}
+
+.inbox-header a{
+    text-decoration: none;
+    color: #1D87FE;
+}
+
+.message-inbox b{
+    font-size: 18px;
+    position: relative;
+    top: 40%;
+    left: 5%;
+}
+
+.textarea{
+    display: flex;
+    height: 40px;
+    background: #dbdbdb;
+    align-items: center;
+    position: relative;
+    top: 78.8%;
+    padding: 0 5px;
+}
+
+.textarea i{
+    font-size: 23px;
+    color: darkgrey;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+.textarea textarea{
+    resize: none;
+    border: 0;
+    background: transparent;
+    border-bottom: 1px solid black;
+    margin-left: 10px;
+    width: 160px;
+    outline: 0;
+    font-size: 12px;
+}
+
+.textarea a{
+    text-decoration: none;
+    color: darkgrey;
+    font-weight: 600;
+    font-size: 20px;
+    margin-left: 6px;
+    margin-top: 8px;
+}
